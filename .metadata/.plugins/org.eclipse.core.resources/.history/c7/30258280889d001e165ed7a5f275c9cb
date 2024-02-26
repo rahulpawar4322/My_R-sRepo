@@ -1,0 +1,16 @@
+public class Moverring{
+	
+	public static void m1(int a){
+		System.out.println("parent");
+	}
+	
+	public static void m1(float f){
+		System.out.println(f);
+	}
+	
+	public static void main(String[] args) {
+		Moverring m = new Moverring();
+		Moverring.m1('a');
+	}
+
+}

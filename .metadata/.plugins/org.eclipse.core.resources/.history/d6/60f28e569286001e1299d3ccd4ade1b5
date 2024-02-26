@@ -1,0 +1,21 @@
+
+class Test1{
+	Test1(){
+		System.out.println("Hello Test1");
+	}
+	
+}
+
+public class Test {
+
+	Test(int a){
+		System.out.println("Hello Test");
+	}
+	
+	public static void main(String[] args) {
+		
+		Test t = new Test(10);
+		
+	}
+
+}

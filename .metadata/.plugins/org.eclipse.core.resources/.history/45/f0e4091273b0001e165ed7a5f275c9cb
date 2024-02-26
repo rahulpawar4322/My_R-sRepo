@@ -1,0 +1,30 @@
+package Demo;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class C {
+
+	public static void main(String[] args) {
+		
+		String name = "rahul pawar";
+		String name1 = "Rahul Kimar";
+		
+		String arr1[] = name.split(" ");
+		String arr2[] = name1.split(" ");
+		
+		HashSet<String> set  = new HashSet<>();
+		
+		for (int i = 0; i < arr2.length; i++) {
+			set.add(arr1[i]);
+			set.add(arr2[i]);
+		}
+		
+		System.out.println(set);
+		
+	}
+
+}

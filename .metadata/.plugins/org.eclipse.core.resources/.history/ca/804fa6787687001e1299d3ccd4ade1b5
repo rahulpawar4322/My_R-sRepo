@@ -1,0 +1,20 @@
+
+class Test1{
+	public void m1(){
+		System.out.println("Hello Test m1()");
+	}
+	
+}
+
+public class Test extends Test1 {
+
+	public void m2(){
+		System.out.println("Hello Test m2()");
+	}
+	
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

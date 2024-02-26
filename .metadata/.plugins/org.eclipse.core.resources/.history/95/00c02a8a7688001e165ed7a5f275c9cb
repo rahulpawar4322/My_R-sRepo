@@ -1,0 +1,43 @@
+
+public class ClasStr {
+
+	public static void main(String[] args) {
+		
+		String str = "rahul pawar";
+		char[] modifiedStr = str.toCharArray();
+		//int count;
+		for (int i = 0; i < modifiedStr; i++) {
+			
+			int count = 1;
+			
+			
+			
+			for (int j = i+1; j < modifiedStr.length; j++) {
+				
+				if(modifiedStr[i] == modifiedStr[j] && modifiedStr[i] != 0) {
+					count++;
+					str.toCharArray()[j] = 0;
+				}
+				
+			}
+			
+			if(count > 1 && modifiedStr != 0) {
+				System.out.println(str.toCharArray()[i]+" -> "+count);
+			}
+		}
+		
+		
+//		int count = 0;
+//		
+//		for (int i = 0; i < str.length(); i++) {
+//
+//			if(str.toCharArray()[i] == 'a') {
+//				count++;
+//			}
+//			
+//		}
+//		
+//		System.out.println("Count of a is -> "+count);
+	}
+
+}

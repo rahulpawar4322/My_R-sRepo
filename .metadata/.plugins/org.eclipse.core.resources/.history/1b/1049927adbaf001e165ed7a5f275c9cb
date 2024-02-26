@@ -1,0 +1,26 @@
+package Demo;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class A {
+    public static void main(String[] args) {
+        List<Integer> arrayList = new ArrayList<>(List.of(1, 2, 3, 4, 5));
+        int rotationSteps = 2;  // Number of steps to rotate
+
+        System.out.println("Original ArrayList: " + arrayList);
+
+        for (int i = 0; i < rotationSteps; i++) {
+            rotateRight(arrayList);
+            System.out.println("ArrayList after iteration " + (i + 1) + ": " + arrayList);
+        }
+    }
+
+    private static void rotateRight(List<Integer> list) {
+        int size = list.size();
+
+        // Rotate the elements to the right
+        Collections.rotate(list, 1);
+    }
+}

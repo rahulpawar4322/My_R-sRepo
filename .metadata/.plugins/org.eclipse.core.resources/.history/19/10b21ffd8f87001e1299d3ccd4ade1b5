@@ -1,0 +1,27 @@
+public class Test {
+
+    public static void main(String[] args) {
+        String inputString = "Hello! This is an example string with @special characters #123.";
+
+        String[] separatedStrings = separateSpecialCharacters(inputString);
+
+        System.out.println("Original String: " + inputString);
+        System.out.println("Separated Strings: ");
+        for (String separatedString : separatedStrings) {
+            System.out.println(separatedString);
+        }
+    }
+
+    private static String[] separateSpecialCharacters(String inputString) {
+        // Define a set of special characters
+        String specialCharacters = "!@#$%^&*()_-+=<>?/{}[]|";
+
+        // Replace each special character with a space
+        for (char specialChar : specialCharacters.toCharArray()) {
+            inputString = inputString.replace(specialChar, ' ');
+        }
+
+        // Split the string into an array of strings using spaces as the delimiter
+        return inputString.trim().split("\\s+");
+    }
+}

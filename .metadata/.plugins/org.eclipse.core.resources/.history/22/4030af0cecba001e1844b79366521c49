@@ -1,0 +1,19 @@
+package Demo;
+
+
+public class C {
+
+	public static void main(String[] args) {
+		
+		String name = "rahul pawar";
+		System.out.println("Start here dubugging ");
+		String name1 = "rahul Kimar";
+		System.out.println("end here dubugging ");
+		for (int i = 0; i < name1.split(" ").length; i++) {
+			
+			System.out.println(name.contains(name1));
+		}
+		
+	}
+
+}

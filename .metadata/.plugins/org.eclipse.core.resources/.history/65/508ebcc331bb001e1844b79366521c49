@@ -1,0 +1,34 @@
+package encaps;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+
+	
+	public static void main(String[] args) {
+
+ 		Employee emp = new Employee();
+		emp.setEname("Rahul");
+		emp.setId(1000);
+		emp.setMail("rahul@gmail.com");
+		
+		Address address = new Address();
+		address.setCity("Mumbai");
+		address.setCountry("India");
+		
+		List<Address> list = new ArrayList<>();
+		list.add(address);
+		
+		emp.setAddress(list);
+		System.out.println("-------------------------------------------------------------");
+		
+		String s = emp.getAddress().get(0).getCity();
+		
+		System.out.println(s);
+		
+		
+
+	}
+
+}

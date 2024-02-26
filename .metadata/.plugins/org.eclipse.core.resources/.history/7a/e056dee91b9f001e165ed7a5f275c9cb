@@ -1,0 +1,30 @@
+import java.util.LinkedHashSet;
+
+public class Moverring {
+    public static void main(String[] args) {
+        String input = "ABCDABE";
+        String result = removeDuplicates(input);
+        System.out.println("Original String: " + input);
+        System.out.println("String after removing duplicates: " + result);
+    }
+
+    private static String removeDuplicates(String input) {
+        // Use LinkedHashSet to preserve the order of characters
+        LinkedHashSet<Character> uniqueChars = new LinkedHashSet<>();
+
+        // Iterate through each character in the input string
+        for (char c : input.toCharArray()) {
+            // Add each character to the set
+            uniqueChars.add(c);
+        }
+
+        // Construct the result string from the set
+        StringBuilder result = new StringBuilder();
+        for (Character uniqueChar : uniqueChars) {
+            result.append(uniqueChar);
+        }
+
+        return result.toString();
+    }
+}
+

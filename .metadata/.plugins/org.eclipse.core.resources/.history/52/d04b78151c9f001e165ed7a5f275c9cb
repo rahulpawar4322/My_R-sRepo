@@ -1,0 +1,27 @@
+import java.util.Iterator;
+import java.util.LinkedHashSet;
+
+public class Moverring {
+    public static void main(String[] args) {
+        String input = "ABCDABE";
+        StringBuilder str = new StringBuilder();
+        for(int i = 0; i < input.length(); i++) {
+        	
+        	for (int j = 1; j < input.length(); j++) {
+					
+        		if(input.toCharArray()[i] == input.toCharArray()[j]) {
+        			
+        			str.append(input.toCharArray()[i]);
+        			break;
+        		}
+			}
+        	
+		}
+        
+        System.out.println(str);
+        
+        System.out.println("Original String: " + input);
+        System.out.println("String after removing duplicates: ");
+    }
+}
+

@@ -1,0 +1,29 @@
+
+
+class AM{
+	
+	public static void m() {
+		System.out.println("Hello from AM");
+	}
+	
+	
+	public static void m(int a) {
+		System.out.println("Hello from AM");
+	}
+}
+
+public class DEmoQK extends AM{
+	
+	void m1() {
+		m();
+	}
+
+	public static void main(String[] args) {
+		
+		DEmoQK aq = new DEmoQK();
+		//aq.m();
+		
+		AM.m();
+	}
+
+}

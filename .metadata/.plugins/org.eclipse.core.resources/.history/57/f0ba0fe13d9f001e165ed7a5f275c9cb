@@ -1,0 +1,10 @@
+package encaps;
+
+public class Palindorm {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

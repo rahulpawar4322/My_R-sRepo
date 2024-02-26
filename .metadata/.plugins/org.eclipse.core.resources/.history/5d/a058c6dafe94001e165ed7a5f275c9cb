@@ -1,0 +1,15 @@
+package encaps;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Employee emp = new Employee();
+		emp.setEname("Rahul");
+		emp.setId(1000);
+		emp.setMail("rahul@gmail.com");
+		
+
+	}
+
+}

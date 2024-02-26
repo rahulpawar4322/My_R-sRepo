@@ -1,0 +1,41 @@
+package Demo;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+
+public class C {
+	
+	public static Integer[] converttoInteger(int a[]) {
+		
+		Integer in[] = new Integer[a.length];
+		
+		for (int i = 0; i < in.length; i++) {
+			in[i] = a[i];
+		}
+		return in;
+	}
+
+	public static void main(String[] args) {
+		
+		int a[] = {1,2,3,4,5};
+		Integer newArr[] = converttoInteger(a);
+	
+		ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(newArr));
+		
+		System.out.println(list);
+		
+		for (int i = 0; i < 2; i++) {
+			Collections.rotate(list, 1);
+			System.out.println(list.subList(0, 1));
+			System.out.println(list.subList(2,5));
+		}
+		
+		
+		
+
+	}
+
+}

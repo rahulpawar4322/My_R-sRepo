@@ -1,0 +1,19 @@
+import java.util.HashSet;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		HashSet<Integer> hset = new HashSet<Integer>();
+		
+		hset.add(10);
+		hset.add(20);
+		hset.add(6);
+		hset.add(10);
+		
+		System.out.println(hset);
+		System.out.println();
+
+	}
+
+}

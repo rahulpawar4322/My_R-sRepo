@@ -1,0 +1,28 @@
+
+
+
+class parent{
+
+	public void m1(){
+		
+	}
+}
+
+public class Moverring extends parent {
+
+	public void m1(){
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		Moverring c = new Moverring();
+	c.m1();
+	parent p1 = new Moverring();
+	p1.m1();
+	parent p2 = new parent();
+	p2.m1();
+	Moverring c1 = new parent();
+	}
+
+}

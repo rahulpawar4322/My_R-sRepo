@@ -1,0 +1,14 @@
+package Demo;
+
+public class AccionTest {
+
+	public static void main(String[] args) {
+
+			String str= "Indian";
+			System.out.println(str);
+			str = "India";
+			System.out.println(str);
+
+	}
+
+}

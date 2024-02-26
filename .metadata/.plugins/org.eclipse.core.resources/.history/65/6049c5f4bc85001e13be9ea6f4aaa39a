@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		HashSet<Integer> hset = new HashSet<Integer>();
+		
+		hset.add(10);
+		hset.add(20);
+		hset.add(6);
+		hset.add(10);
+
+		System.out.println(hset);
+		
+		ArrayList<Integer> alist = new ArrayList<Integer>(hset);
+		Collections.sort(alist);
+		System.out.println(alist.get(alist.size()-1));
+		System.out.println(alist.size());
+		
+	}
+
+}

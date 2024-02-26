@@ -1,0 +1,23 @@
+public class ClasStr {
+    public static void main(String[] args) {
+        String str = "rahul pawar";
+
+        // Create a new string to store modified characters
+        char[] modifiedStr = str.toCharArray();
+
+        for (int i = 0; i < modifiedStr.length; i++) {
+            int count = 1;
+
+            for (int j = i + 1; j < modifiedStr.length; j++) {
+                if (modifiedStr[i] == modifiedStr[j] && modifiedStr[i] != 0) {
+                    count++;
+                    modifiedStr[j] = 0;
+                }
+            }
+
+            if (count > 1 && modifiedStr[i] != 0) {
+                System.out.println(modifiedStr[i] + " -> " + count);
+            }
+        }
+    }
+}

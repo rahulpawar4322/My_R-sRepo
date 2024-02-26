@@ -1,0 +1,15 @@
+package Demo;
+
+public class AccionTest {
+
+	public static void main(String[] args) {
+
+			String str= "Indian";
+			System.out.println(str);
+			str = "India";
+			Strinf s = str.replace("In", "Bh");
+			System.out.println(s);
+
+	}
+
+}

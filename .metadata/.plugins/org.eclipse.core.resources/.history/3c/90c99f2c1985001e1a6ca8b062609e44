@@ -1,0 +1,13 @@
+
+public class AA {
+	
+	public static void main(String[] args) {
+		
+		AA obj = new AA();
+		AA obj1 = new AA();
+
+		Object obj[] = {obj,obj1};
+		
+	}
+
+}

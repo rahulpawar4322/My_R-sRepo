@@ -1,0 +1,23 @@
+package Demo;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class C {
+
+	public static void main(String[] args) {
+		
+		String name = "rahul pawar";
+		String name1 = "rahul Kimar";
+		
+		for (int i = 0; i < name1.split(" ").length; i++) {
+			
+			System.out.println(name1.contains(name));
+		}
+		
+	}
+
+}

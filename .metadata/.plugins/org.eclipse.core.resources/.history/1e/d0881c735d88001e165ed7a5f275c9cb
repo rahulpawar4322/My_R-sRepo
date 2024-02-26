@@ -1,0 +1,27 @@
+import java.util.Arrays;
+
+public class ArryExample {
+
+	public static void main(String[] args) {
+		
+		int a[] = {3,5,4,1,2};
+		
+		Arrays.sort(a);
+		
+		for (int i = a.length; i >= 0; i--) {
+			if(a[i] > 3) {
+				System.out.print(a[i]+" ");
+			}
+		}
+		
+		System.out.println();
+		
+		for (int i = a.length; i >= 0; i--) {
+			if(a[i] > 3) {
+				System.out.print(a[i]+" ");
+			}
+		}
+
+	}
+
+}

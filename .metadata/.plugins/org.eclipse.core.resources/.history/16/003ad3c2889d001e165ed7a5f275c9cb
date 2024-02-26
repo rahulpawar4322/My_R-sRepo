@@ -1,0 +1,12 @@
+public class Moverring{
+	
+	public void m1(float f){
+		System.out.println(f);
+	}
+	
+	public static void main(String[] args) {
+		Moverring m = new Moverring();
+		m.m1(10);
+	}
+
+}

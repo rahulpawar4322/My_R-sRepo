@@ -1,0 +1,19 @@
+import java.util.Arrays;
+
+public class AnagramChecker {
+
+    public static void main(String[] args) {
+        String str1 = "listen";
+        String str2 = "silent";
+
+    }
+
+    private static boolean areAnagrams(String str1, String str2) {
+        // Check if the lengths of the two strings are the same
+        if (str1.length() != str2.length()) {
+            return false;
+        }
+
+        System.out.println(str1.toCharArray());
+    }
+}

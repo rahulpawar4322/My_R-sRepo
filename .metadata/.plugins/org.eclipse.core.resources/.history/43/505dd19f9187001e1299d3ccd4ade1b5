@@ -1,0 +1,28 @@
+import java.util.Arrays;
+
+public class AA {
+
+    public static void main(String[] args) {
+        String str1 = "listen";
+        String str2 = "silent";
+
+        areAnagrams(str1,str2);
+    }
+
+    private static boolean areAnagrams(String str1, String str2) {
+        // Check if the lengths of the two strings are the same
+        if (str1.length() != str2.length()) {
+            return false;
+        }
+
+        char char1[] = str1.toCharArray();
+        char char2[] = str2.toCharArray();
+        
+        char c[] = {'a','b','c'};
+        int a = {2,3,4,5};
+        
+        System.out.println(a);
+        
+        return true;
+    }
+}

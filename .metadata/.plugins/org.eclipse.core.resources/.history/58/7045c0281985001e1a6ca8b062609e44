@@ -1,0 +1,18 @@
+
+public class AA {
+
+	AA(){
+		System.out.println("Hello");
+	}
+	
+	AA(int a){
+		System.out.println("Hello13");
+	}
+	
+	public static void main(String[] args) {
+		
+		AA obj = new AA(13);
+
+	}
+
+}

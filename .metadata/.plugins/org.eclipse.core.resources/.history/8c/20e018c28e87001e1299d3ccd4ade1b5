@@ -1,0 +1,25 @@
+
+public class Test {
+	
+	public static void main(String[] args) {
+		
+		String input = "@rahul!pawar";
+		
+		Test t = new Test();
+		t.speclOne(input);
+		
+	}
+	
+	public void speclOne(String input) {
+		
+		String spclChar = "@!";
+		
+		for(char c : spclChar.toCharArray()) {
+			input = input.replace(c,' ');
+		}
+		
+		System.out.println(input.trim().split("\\s+").toString());
+		
+	}
+
+}

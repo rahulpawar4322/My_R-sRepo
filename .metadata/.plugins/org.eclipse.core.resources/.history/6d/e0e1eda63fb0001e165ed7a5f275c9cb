@@ -1,0 +1,36 @@
+package Demo;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
+public class C {
+	
+	public Integer[] converttoInteger(int a[]) {
+		
+		Integer in[] = new Integer[a.length];
+		
+		for (int i = 0; i < in.length; i++) {
+			in[i] = a[i];
+		}
+		
+		return in;
+	}
+
+	public static void main(String[] args) {
+		
+		int a[] = {1,2,3,4,5};
+	
+		//converting int array to integer
+		
+	
+		//ArrayList<Integer> list = new ArrayList<Integer>(List.of(1,2,3,4,5));
+		
+		System.out.println(list);
+		
+		
+
+	}
+
+}

@@ -1,0 +1,22 @@
+public class Moverring {
+    public static void main(String[] args) {
+        String input = "ABCDABE";
+        StringBuilder str = new StringBuilder();
+        for(int i = 0; i < input.length(); i++) {
+        	
+        	for (int j = 1; j < input.length(); j++) {
+					
+        		if(input.toCharArray()[i] == input.toCharArray()[j]) {
+        			
+        			str.append(input.toCharArray()[i]);
+        			
+        		}
+			}
+        	
+        	System.out.println(str);
+        	
+		}
+        
+    }
+}
+

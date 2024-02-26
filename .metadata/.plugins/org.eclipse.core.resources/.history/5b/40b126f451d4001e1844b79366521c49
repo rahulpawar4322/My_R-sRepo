@@ -1,0 +1,40 @@
+package encaps;
+
+import java.util.List;
+
+public class Employee {
+	
+	private String ename;
+	private String mail;
+	private Integer id;
+	private List<Address> address;
+	
+	public String getEname() {
+		return ename;
+	}
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+	public String getMail() {
+		return mail;
+	}
+	public void setMail(String mail) {
+		this.mail = mail;
+	}
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public List<Address> getAddress() {
+		return address;
+	}
+	public void setAddress(List<Address> address) {
+		this.address = address;
+	}
+	
+	
+	
+
+}

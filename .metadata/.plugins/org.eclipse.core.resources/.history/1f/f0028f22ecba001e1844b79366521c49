@@ -1,0 +1,21 @@
+package Demo;
+
+
+public class C {
+
+	public static void main(String[] args) {
+		
+		System.out.println("Start here dubugging ");
+		
+		System.out.println("middle here dubugging ");
+		int d = add(10,20);
+		System.out.println("Start here dubugging ");
+		
+	}
+	
+	static int add(int a, int b) {
+		int c = a+b;
+		return c;
+	}
+
+}

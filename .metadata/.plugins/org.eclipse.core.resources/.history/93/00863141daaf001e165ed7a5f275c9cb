@@ -1,0 +1,38 @@
+package Demo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class B {
+    public static void main(String[] args) {
+        List<Integer> arrayList = new ArrayList<>(List.of(1, 2, 3, 4, 5));
+        int rotationSteps = 1;  // Number of steps to rotate
+
+        System.out.println("Original ArrayList: " + arrayList);
+
+        rotateRight(arrayList, rotationSteps);
+
+        System.out.println("ArrayList after rotation: " + arrayList);
+    }
+
+    private static void rotateRight(List<Integer> list, int steps) {
+        int size = list.size();
+        
+        System.out.println("size "+size);
+        
+        // Calculate the effective number of steps to avoid unnecessary rotations
+        int effectiveSteps = steps % size;
+
+        // Create sublists and rearrange them
+        List<Integer> tempList = new ArrayList<>(list.subList(size - effectiveSteps, size));
+        
+        System.out.println(list.subList(5, 1));
+        
+        tempList.addAll(list.subList(0, size - effectiveSteps));
+
+        // Update the original list
+        for (int i = 0; i < size; i++) {
+            list.set(i, tempList.get(i));
+        }
+    }
+}

@@ -1,0 +1,23 @@
+package Demo;
+
+public class C { 
+ 
+    { 
+        System.out.println("First Non-Static Block"); 
+    } 
+ 
+    { 
+        System.out.println("Second Non-Static Block"); 
+    } 
+ 
+    static 
+    { 
+        System.out.println("Static Block"); 
+    } 
+ 
+    public static void main(String[] args) 
+    { 
+        System.out.println("Main Method"); 
+        C obj = new C();
+    }
+}

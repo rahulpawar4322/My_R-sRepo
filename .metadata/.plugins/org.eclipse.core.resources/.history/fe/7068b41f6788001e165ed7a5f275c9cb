@@ -1,0 +1,40 @@
+
+public class ClasStr {
+
+	public static void main(String[] args) {
+		
+		String str = "rahulpawar";
+		int count;
+		for (int i = 0; i < str.length(); i++) {
+			
+			count = 1;
+			
+			for (int j = i+1; j < str.length(); j++) {
+				
+				if(str.toCharArray()[i] == str.toCharArray()[j] && str.toCharArray()[i] != ' ') {
+					count++;
+					str.toCharArray()[j] = 0;
+				}
+				
+			}
+			
+			if(count > 1 && str.toCharArray()[i] == 0) {
+				System.out.println(str.toCharArray()[i]+" -> "+count);
+			}
+		}
+		
+		
+//		int count = 0;
+//		
+//		for (int i = 0; i < str.length(); i++) {
+//
+//			if(str.toCharArray()[i] == 'a') {
+//				count++;
+//			}
+//			
+//		}
+//		
+//		System.out.println("Count of a is -> "+count);
+	}
+
+}

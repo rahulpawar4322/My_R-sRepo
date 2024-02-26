@@ -1,0 +1,22 @@
+
+
+class BB{
+	private BB(){
+		System.out.println("HelloBB");
+	}	
+	
+}
+
+public class AA {
+
+	private AA(){
+		System.out.println("Hello");
+	}
+	
+	public static void main(String[] args) {
+		
+		BB obj = new BB();
+
+	}
+
+}

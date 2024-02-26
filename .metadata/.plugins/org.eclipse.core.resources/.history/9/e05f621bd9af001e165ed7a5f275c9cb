@@ -1,0 +1,44 @@
+package Demo;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+
+public class B {
+	
+	private static void rotateRight(int[] arr, int steps) {
+        int length = arr.length;
+
+        // Calculate the effective number of steps to avoid unnecessary rotations
+        int effectiveSteps = steps % length;
+
+        System.out.println("effectiveSteps "+effectiveSteps);
+        
+        // Create a temporary array to store rotated elements
+        int[] temp = new int[effectiveSteps];
+
+        // Copy the last 'effectiveSteps' elements to the temporary array
+        System.arraycopy(arr, length - effectiveSteps, temp, 0, effectiveSteps);
+
+        // Shift the remaining elements to the right
+        System.arraycopy(arr, 0, arr, effectiveSteps, length - effectiveSteps);
+
+        // Copy back the elements from the temporary array to the beginning
+        System.arraycopy(temp, 0, arr, 0, effectiveSteps);
+    }
+
+	public static void main(String[] args) {
+
+        int[] array = {1, 2, 3, 4, 5};
+        int rotationSteps = 2;  // Number of steps to rotate
+
+        System.out.println("Original array: " + Arrays.toString(array));
+
+        rotateRight(array, rotationSteps);
+
+        System.out.println("Array after rotation: " + Arrays.toString(array));
+		
+
+	}
+
+}

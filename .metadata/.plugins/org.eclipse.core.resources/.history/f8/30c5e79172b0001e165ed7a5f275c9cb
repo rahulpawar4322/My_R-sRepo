@@ -1,0 +1,17 @@
+package Demo;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+
+public class C {
+
+	public static void main(String[] args) {
+		
+		String name = "rahul pawar";
+		
+		System.out.println(name.toCharArray()[1]);
+		
+	}
+
+}
